@@ -31,13 +31,13 @@ const Personajes = () => {
 
 
 
-                    {personajes.map((i) => <div className="card tarjetas" style={{ width: "38rem" , height:"24rem" , padding:"10px" , margin:"auto" , marginTop: "18px"}}>
-                        <img src={i.image} style={{width: "13rem" , margin:"auto", marginTop:"9px" }} className="card-img-top" alt={i.name} />
+                    {personajes.map((i) => <div className="card tarjetas " style={{ width: "43rem" , height:"14.3rem" , marginTop: "18px" , display:"flex" , flexWrap:"wrap"  }} >
+                        <img src={i.image} style={{width: "13rem" , marginLeft:"20px", marginTop:"9px" }} className="card-img-top" alt={i.name} />
                         <div className="card-body">
-                            <h2 className="card-text" key={i.id} style={{marginBottom:"16px"}}>{i.name}</h2>
-                            <p className="card-text" key={i.id} style={{margin:"-3px"}}><b>Especie:</b> {i.species}</p>
-                            <p className="card-text" key={i.id} style={{margin:"-3px"}}><b>Género:</b> {i.gender}</p>
-                            <p className="card-text" key={i.id}><b>Lugar de nacimiento:</b> {i.origin.name}</p>
+                            <h2 className="card-text" key={i.id} style={{marginBottom:"16px" , textAlign:"right"}}>{i.name}</h2>
+                            <p className="card-text" key={i.id} style={{  textAlign:"right"}}><b>Especie:</b> {i.species}</p>
+                            <p className="card-text" key={i.id} style={{ textAlign:"right"}}><b>Género:</b> {i.gender}</p>
+                            <p className="card-text" key={i.id} style={{textAlign:"right"}}><b>Lugar de nacimiento:</b> {i.origin.name}</p>
                         </div>
                     </div>)}
                 </div>

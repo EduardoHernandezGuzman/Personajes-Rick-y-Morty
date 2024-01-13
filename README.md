@@ -11,7 +11,7 @@ Utilizando los siguientes comandos:
 
 - Install the packages with `$ npm install`.
 - Run the webpack server with `$ npm run start`
-- 
+  
 #### Agradecimientos
 
 A 4GEEKSACADEMY por su formación.
